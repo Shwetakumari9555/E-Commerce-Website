@@ -5,36 +5,36 @@ body{
     box-sizing: border-box;
     /* overflow-x: hidden; */
 }
+html{
+    font-size: 16px;
+}
 #navbar-columbia{
+    height: 100%;
+    display: grid;
+    align-items: center;
     text-align: center;
-    padding-top: 30px;
-    background-color: #007ab8;;
+    background-color: #007ab8;
 }
 #navbar-columbia a{
-    font-size: 50px;
     text-decoration: none
 }
 #above-navbar{
     width: 100%;
-    height: 60px;
+    height: 2rem;
     background-color: white;
     position: sticky;
     margin: 0;
     top: 0;
     z-index: 20;
-    display: grid;
-    grid-template-columns: 80% 20%;
 }
 #above-navbar ul{
-    
     list-style: none;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    display: flex;
+    float: right;
+    column-gap: 30px;
 }
 #above-navbar ul li a{
-    font-size: 20px;
     font-weight: bold;
-    padding: 20px 30px;
     background-color: black;
     color: white;
 }
@@ -43,15 +43,18 @@ body{
     border: 2px solid black;
 }
 .navbar {
-    height: 120px;
+    /* border: 2px solid blue; */
+    box-sizing: border-box;
+    height: 6rem;
+    font-size: 1.5em;
     width: 100%;
-    background-color: #000;
+    background-color: #474747;
     color: white;
     display: grid;
-    grid-template-columns: 15% 50% 30%;
+    grid-template-columns: 15% 45% 25%;
     position: fixed;
     z-index: 20;
-    
+    column-gap: 1.8em;
 }
 .navbar a{
     color: white;
@@ -60,16 +63,14 @@ body{
     height: 100%;
     display: grid;
     grid-template-columns: repeat(7,1fr);
-    align-content: center;
-    column-gap: 10px;
 }
 #menu-bar>a {
-    padding-top: 50px;
+    /* border: 1px solid red; */
+    font-size: 0.65em;
+    display: grid;
+    align-items: center;
     box-sizing: border-box;
-    height: 120px;
     text-align: center;
-    /* border: 1px solid wheat; */
-    font-size: 20px;
     text-decoration: none;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -81,30 +82,23 @@ body{
 
 #menu-bar a:hover #menu-bar-men {
     width: 40%;
-    height: 400px;
+    height: 20rem;
     display: block;
     position: absolute;
-    margin-top: 45px;
+    margin-top: 26rem;
     background-color: ghostwhite;
     overflow-y: scroll;
 }
 
 #menu-bar a:hover #menu-bar-men ul{
     list-style: none;
-    font-size: 20px;
+    font-size: 1.2em;
     text-align: left;   
 }
 #menu-bar a:hover #menu-bar-men ul li {
-    margin-bottom: 30px;
-    border-bottom: 1px solid white;
+    margin-bottom: 0.8em;
     color: black;
-    
 }
-
-#menu-bar a:hover #menu-bar-men ul li:last-child{
-    border-bottom: none;
-}
-
 #menu-bar a:hover {
     background-color: cadetblue;
 }
@@ -113,19 +107,14 @@ body{
 
 /* navbar search box */
 .navbar-search{
-    /* border: 2px solid red; */
     display: grid;
     align-items: center;
-    /* box-sizing: border-box; */
+    /* border: 1px solid firebrick; */
 }
 #navbar-search-box{
-    padding-left: 20px;
     background-color: transparent;
-    width: 60%;
-    margin-left: 240px;
     border: 2px solid white;
-    height: 60px;
-    font-size: x-large;
+    height: 2em;
 }
 
 
@@ -146,21 +135,20 @@ body{
     width: 100%;
 }
 .home-top-section>p{
-    margin-top: 250px;
+    margin-top: 16rem;
     position: absolute;
-    letter-spacing: 6px;
-    font-size: 120px;
-    margin-left: 100px;
+    letter-spacing: 0.1em;
+    font-size: 5rem;
+    margin-left: 7rem;
     color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     z-index: 2;
 }
 #shop_and_skip {
     position: absolute;
-    margin-top: 400px;
-    margin-left: 100px;
-    font-size: 18px;
-    width: 260px;
+    margin-top: 24rem;
+    margin-left: 7rem;
+    width: 250px;
     height: 50px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: white;
@@ -174,16 +162,13 @@ body{
 /* Get ready for winter */
 .get-ready-for-winter{
     width: 100%;
-    /* border: 1px solid black; */
-    /* height: 500px; */
     box-sizing: border-box;
-    margin-top: 150px;
+    margin-top: 10rem;
     
 }
 .get-ready-for-winter>p{
     font-size: 30px;
     font-weight: bold;
-    
     width: 90%;
     margin: auto;
     margin-bottom: 40px;
@@ -192,20 +177,19 @@ body{
 .crauser{
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    column-gap: 1%;
     width: 90%;
     margin: auto;
-    column-gap: 1%;
-    /* box-sizing: border-box; */
 }
 
 .crauser>div{
+    width: 100%;
     text-align: center;
-    /* border: 1px solid green; */
 }
 .crauser>div img {
     display: block;
     margin: auto;
-    height: 420px;
+    width: 100%;
 }
 .crauser>div>p{
     font-size: 25px;
@@ -271,6 +255,43 @@ body{
     margin: auto;
     display: block;
 }
+#featured {
+    width: 100%;
+   
+    box-sizing: border-box;
+}
+#featured>div:nth-child(2) img{
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+#featured>div:nth-child(3){
+    margin: auto;
+    margin-top: 20px;
+}
+#featured>div:nth-child(3){
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 20px;
+}
+#featured>div:nth-child(3)>div img{
+    width: 100%;
+}
+#featured>div:nth-child(1) {
+    width: 90%;
+    margin: auto;
+    font-size: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+}
+.footer {
+    margin-top: 100px;
+    width: 100%;
+}
+.footer img {
+    width: 100%;
+}
 
 
 @media (min-width:600px) and (max-width:900px) {
@@ -311,6 +332,7 @@ body{
     #shop_and_skip{
         margin-top: 540px;
     }
+    
 
 }
 
