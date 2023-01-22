@@ -5,6 +5,9 @@ body{
     box-sizing: border-box;
     /* overflow-x: hidden; */
 }
+li:hover {
+    text-decoration: underline;
+}
 html{
     font-size: 16px;
 }
@@ -238,7 +241,7 @@ html{
     grid-template-columns: repeat(2,1fr);
     column-gap: 20px;
 }
-.reward-login-signup div button{
+.reward-login-signup div a{
     border: none;
     margin-top: 20px;
     font-size: 20px;
